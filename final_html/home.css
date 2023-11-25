@@ -320,10 +320,11 @@ nav {
 }
 
 .card-comments{
+    color: white;
     height: 300px;
     width: 420px;
     border-radius: 10px;
-    background-color: rgb(255, 255, 255);
+    background-color: #202833;
     box-shadow: 1px 1px 13px 1px  rgba(0, 0, 0, 0.611);
     display: flex;
     flex-direction: column;
@@ -334,19 +335,28 @@ nav {
     width: 100%;
     overflow: hidden;
 }
-
-.card-comments {
-    display: flex;
-    animation: movemes 40s linear infinite; 
+.card-comments{
+    width: fit-content;
 }
+#people:hover{
+    animation-play-state: paused;
+}
+#people {
+    display: flex;
+    animation: movemes 10s linear infinite; 
+}
+.card-comments{
+    display: flex;
+    
 
+}
 
 @keyframes movemes {
     0%{
-        transform: translateX(900%); 
+        transform: translateX(100%); 
     }
     100%{
-        transform: translateX(-900%); 
+        transform: translateX(-100%); 
     }
 }
 
@@ -417,15 +427,15 @@ about page
 
 .us_container{
     display: flex;
+    justify-content: space-around;
 
 }
 
 .flip-container {
     perspective: 1000px;
-    width: 200px;
-    height: 200px;
+    height: 400px;
     position: relative;
-    margin: 50px auto;
+    margin: 30px 20px;
 }
 
 .flip-container:hover .flipper {
@@ -433,10 +443,11 @@ about page
 }
 
 .flipper {
-    width: 100%;
     height: 100%;
+    width: 250px;
     transform-style: preserve-3d;
     transition: transform 0.6s;
+    justify-content: center;
 }
 
 .front,
@@ -444,6 +455,8 @@ about page
     position: absolute;
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
     backface-visibility: hidden;
 }
 
@@ -451,20 +464,44 @@ about page
     background: linear-gradient(45deg, #0b0c10, #1f8268);
     font-weight: bolder;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
     font-size: 24px;
     color: #ffffff; /* Adjust text color as needed */
     border-radius: 20px;
 }
-
+.profile_pic{
+    border-radius: 52%; 
+}
 .back {
     border-radius: 20px;
-    background-color: #202833;
+    background: linear-gradient(45deg, black, #1f8268);
     transform: rotateY(180deg);
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 18px;
     color: white;
+}
+
+/*<--CONTACT PAGE-->*/
+.flip-container-contact {
+    perspective: 1000px;
+    width: 200px;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin: 50px auto;
+}
+.flip-container-contact:hover .flipper {
+    transform: rotateY(180deg);
+    box-shadow: rgb(126, 251, 201) 1px 1px 10px ;
+    border-radius: 20px;
+}
+ul{
+    padding-left: 2px;
+}
+.names, .profile_pic{
+    margin-top: 20px;
 }
