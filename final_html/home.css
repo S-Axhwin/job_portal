@@ -289,14 +289,12 @@ nav {
     width: auto;
     background-color: #c2b9b0;
     border-radius: 50px;
-    overflow-y: hidden ;
     display: flex;
 
 }
 
 #message{
     background-color: #1f8268;
-    width: 350px;
     border-radius: 50px 0 0 50px;
 
 }
@@ -311,7 +309,7 @@ nav {
 
 #people{
     display: grid;
-    width: 4000px;
+    width: 1000px;
     grid-template-columns: auto auto auto auto auto auto auto auto auto;
     gap: 300px;
     overflow: hidden;
@@ -324,15 +322,12 @@ nav {
 .card-comments{
     color: white;
     height: 300px;
+    width: max-content;
+    border-radius: 10px;
     background-color: #202833;
     box-shadow: 1px 1px 13px 1px  rgba(0, 0, 0, 0.611);
     display: flex;
     flex-direction: column;
-    width: max-content;
-}
-
-#this-div:hover{
-    animation-play-state: paused ;
 }
 /*<-------NOT THIS------->*/
 .people {
@@ -340,12 +335,14 @@ nav {
     width: 100%;
     overflow: hidden;
 }
+
 #people:hover{
     animation-play-state: paused;
 }
 #people {
     display: flex;
-    animation: movemes 40s linear infinite; 
+    width: 4000px;
+    animation: movemes 30s linear infinite; 
 }
 .card-comments{
     display: flex;
@@ -360,13 +357,17 @@ nav {
     100%{
         transform: translateX(-100%); 
     }
+}.image-row {
+    display: flex;
+    animation: moveImages 40s linear infinite; 
 }
 
 .para{
     color: black;
     font-size: medium;
-    word-spacing: 1px;
+    text-align: justify;
     font-family: 'Kanit', sans-serif;
+    padding: 20px;
 
 }
 
@@ -413,14 +414,19 @@ nav {
     list-style: none;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 #footer_logos li{
     padding-top: 40px;
 }
 
+.col ul li{
+    margin: 10px;
+}
 
+.col ul li:hover{
+    cursor: pointer;
+}
 /*
 about page
 */

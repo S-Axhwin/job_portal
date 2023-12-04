@@ -3,82 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="home.css">
+    <style>
+        .flip-container-contact {
+    perspective: 1000px;
+    width: 200px;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin: 50px auto;
+}
+.flip-container-contact:hover .flipper {
+    transform: rotateY(180deg);
+    box-shadow: rgb(126, 251, 201) 1px 1px 10px ;
+    border-radius: 20px;
+}
+ul{
+    padding-left: 2px;
+}
+.names, .profile_pic{
+    margin-top: 20px;
+}
+.profile_pic{
+    border-radius: 50%;
+}
+.front{
+    flex-direction: column;
+}
+    </style>
 </head>
 <body>
     <nav>
         <h3 id="logo" style="font-family: 'Poppins', sans-serif ; color: #1f8268;">&nbsp;&nbsp; <a href="">Job Pro</a></h3>
         <ul>
-            <li class="nav-link"><a href="home.html" style="color: #ffffdf;font-weight:bolder;">Home</a></li>
+            <li class="nav-link"><a href="home.html" style="color: #ffffdf;font-weight:bolder;">Home </a></li>
             <li class="nav-link"><a href="about.html" style="color: #ffffdf;font-weight:bold;">About Us</a></li>
             <li class="nav-link"><a href="contact.html" style="color: #ffffdf; font-weight:bold;">Contact Us</a></li>
         </ul>
     </nav>
     <div style="display: flex; flex-direction: row;">
+        
         <div class="flip-container-contact">
             <div class="flipper">
                 <div class="front">
-                    <img class="profile_pic" src="ashwin_profile.png"
-                        height="80px">
+                   
                         <span class="names">AARIF</span>
                 </div>
                 <div class="back">
                     <h3>CONTRIBUTION</h3>
                     <ol style="font-size: small; display: flex; flex-direction: column;">
-                        <li>DESIGNED IN FIGMA</li>
-                        <li>FOOTER PAGE</li>
+                        <li>TESTING AND DEBUGING</li>
+                        <li>COLOR SELECTION</li>
                     </ol>
-                    <h3>SOCIAL <hr></h3>
-                        <ul style="font-size: small; text-align: left;">
-                            <li><a href="https://instagram.com" target="_blank">aarif.insta</a></li>
-                            <li><a href="https://facebook.com" target="_blank">aarif.fb</a></li>
-                            <li> <a href="https://Twitter.com" target="_blank">Twitter</a></li>
-                        </ul>
                 </div>
             </div>
         </div>
         <div class="flip-container-contact">
             <div class="flipper" style="width: 400px;">
                 <div class="front">
-                        <img class="profile_pic" src="ashwin_profile.png" 
-                        height="80px">
+                        
                         <span class="names">ASHWIN</span>
                 </div>
                 <div class="back">
                     <h3>CONTRIBUTION <hr></h3>
                     <ol style="font-size: small; display: flex; flex-direction: column;">
-                        <li>DESIGN CONVERTED IN CODE</li>
+                        <li>CODED THE WEBSITE</li>
                         <li>UX AND UI</li>
                     </ol>
                     <h3>SOCIAL <hr></h3>
                         <ul style="font-size: small; text-align: left;">
-                            <li><a href="https://instagram.com" target="_blank">axhwin.insta</a></li>
-                            <li><a href="https://facebook.com" target="_blank">axhwin.fb</a></li>
-                            <li> <a href="https://Twitter.com" target="_blank">Twitter</a></li>
+                            <li>Instagram</li>
+                            <li>Twitter</li>
+                            <li>FaceBook</li>
                         </ul>
                 </div>
             </div>
         </div>
         <div class="flip-container-contact">
             <div class="flipper">
-                <div class="front"><img class="profile_pic" src="ashwin_profile.png" 
-                        height="80px">
-                        <span class="names">ARGIMA</span></div>
+                <div class="front">
+                        <span class="names">AGREEMA</span></div>
                 <div class="back">
                     <h3>CONTRIBUTION</h3>
                     <ol style="font-size: small; display: flex; flex-direction: column;">
-                        <li>SIGNUP PAGE</li>
-                        <li>DOCUMENTAION</li>
+                        <li>SIGN UP AND SIGN IN</li>
+                        <li>FOOTER PAGE</li>
                     </ol>
-                    <h3>SOCIAL <hr></h3>
-                        <ul style="font-size: small; text-align: left;">
-                            <li><a href="https://instagram.com" target="_blank">agrima.insta</a></li>
-                            <li><a href="https://facebook.com" target="_blank">agrima.fb</a></li>
-                            <li> <a href="https://Twitter.com" target="_blank">Twitter</a></li>
-                        </ul>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="flex footer" style="margin-top: 100px;">
+        <div class="flex col">
+            <ul id="footer_logos" style="display: flex; flex-direction: column; justify-content: center;">
+                <li><a href="home.html">LOGO</a></li>
+                <li>DONATE NOW</li>
+                <li>
+                    Handles
+                </li>
+            </ul>
+        </div>
+        <div class="flex col">
+            <ul>
+                <li>
+                    <h3>TAKE ACTION</h3>
+                    <hr color="white"></li>
+                <li>Home</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="flex col">
+
+            <ul>
+                <li>
+                    <h3>LEARN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+                    <hr color="white"></hr>
+                </li>
+                <li>W3S</li>
+                <li>Udamy</li>
+                <li>LinkedIn</li>
+                <li>Coursera</li>
+                
+            </ul>
+        </div>
+        <div class="flex col">
+            <ul>
+                <li>
+                    <h3>CONTACT</h3>
+                    <hr color="white"></hr>
+                </li>
+                <li>About</li>
+                <li>ContactUs</li>
+                <li>@Ashwin</li>
+                <li>@aarif</li>
+                <li>@agreema</li>
+            </ul>
+        </div>
+        <div class="flex col">
+
         </div>
     </div>
 </body>

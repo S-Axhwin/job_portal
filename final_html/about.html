@@ -5,13 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="home.css">
+    <style>
+    .flip-container-contact {
+        perspective: 1000px;
+        width: 200px;
+        height: 500px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        margin: 50px auto;
+    }
+    .flip-container-contact:hover .flipper {
+        transform: rotateY(180deg);
+        box-shadow: rgb(126, 251, 201) 1px 1px 10px ;
+        border-radius: 20px;
+    }
+    ul{
+        padding-left: 2px;
+    }
+    .names, .profile_pic{
+        margin-top: 20px;
+    }
+    .profile_pic{
+        border-radius: 50%;
+    }
+    .front{
+        flex-direction: column;
+    }
+    </style>
 </head>
 <body>
     <nav>
         <h3 id="logo" style="font-family: 'Poppins', sans-serif ; color: #1f8268;">&nbsp;&nbsp; <a href="">Job Pro</a></h3>
         <ul id="this">
             <li class="nav-link"><a href="home.html" style="color: #ffffdf;font-weight:bolder;">Home</a></li>
-            <li class="nav-link"><a href="aboutus.html" style="color: #ffffdf;font-weight:bold;">About Us</a></li>
+            <li class="nav-link"><a href="about.html" style="color: #ffffdf;font-weight:bold;">About Us</a></li>
             <li class="nav-link"><a href="contact.html" style="color: #ffffdf; font-weight:bold;">Contact Us</a></li>
         </ul>
     </nav>
@@ -85,10 +113,6 @@
                     <hr color="white"></li>
                 <li>Home</li>
                 <li>Contact</li>
-                <li>This</li>
-                <li>That</li>
-                <li>Him</li>
-                <li>Her</li>
             </ul>
         </div>
         <div class="flex col">
@@ -98,12 +122,11 @@
                     <h3>LEARN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
                     <hr color="white"></hr>
                 </li>
-                <li>Home</li>
-                <li>Contact</li>
-                <li>This</li>
-                <li>That</li>
-                <li>Him</li>
-                <li>Her</li>
+                <li>W3S</li>
+                <li>Udamy</li>
+                <li>LinkedIn</li>
+                <li>Coursera</li>
+                
             </ul>
         </div>
         <div class="flex col">
@@ -112,17 +135,12 @@
                     <h3>CONTACT</h3>
                     <hr color="white"></hr>
                 </li>
-                <li>Home</li>
-                <li>Contact</li>
-                <li>This</li>
-                <li>That</li>
-                <li>Him</li>
-                <li>Her</li>
+                <li>About</li>
+                <li>ContactUs</li>
+                <li>@Ashwin</li>
+                <li>@aarif</li>
+                <li>@agreema</li>
             </ul>
         </div>
-        <div class="flex col">
-
-        </div>
-    </div>
 </body>
 </html>
